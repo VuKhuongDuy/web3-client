@@ -1,11 +1,25 @@
 {
-  "name": "web3-client",
+  "name": "typescript-base",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "lint": "npx eslint . --ext .ts",
+    "dev": "tsc && node dist/index.js"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "eslint": "^8.52.0",
+    "eslint-plugin-react": "^7.33.2",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "web3": "^4.2.2"
+  }
 }
